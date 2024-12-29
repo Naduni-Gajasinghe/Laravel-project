@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+
+
+@layer components {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="url"], textarea {
+        @apply block w-full rounded-md border-0 p-2 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-500 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-sm bg-white;
+    }
+    label {
+        @apply block text-sm font-medium leading-6 text-slate-900 first-letter:capitalize;
+    }
+    header {
+        @apply bg-slate-800 shadow-md;
+    }
+
+    main {
+        @apply max-w-screen-lg mx-auto;
+    }
+   
+
+.title {
+    @apply text-3xl mb-4 font-bold;
+}
+
+/*error message*/
+.error {
+    color: red;
+}
+
+/* Navbar Container */
+.navbar {
+    background-color: #e1e2ef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #4b5563; /* Gray-700 */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #303c5d; /* Hover Blue */
+}
+
+/* Register Button */
+.register-btn {
+    background-color: #303c5d; /* Blue-600 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #1b47f4; /* Blue-500 */
+    color: white;
+}
+
+/* Your custom styles for the registration form */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Gray-100 */
+}
+
+.form-wrapper {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-wrapper h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+
+/* Error input styling */
+.form-group input.error {
+    border-color: #ef4444; /* Tailwind's Red-500 */
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+.error-message {
+    color: #ef4444; /* Red-500 */
+    font-size: 0.875rem; /* Tailwind's text-sm */
+    margin-top: 0.5rem;
+}
+
+.round-btn {
+    @apply w-8 h-8 overflow-auto rounded-full bg-slate-100 focus:outline-none focus:ring-1 focus:ring-slate-100 focus:ring-offset-2 focus:ring-offset-slate-800;
+}
+
+  .username {
+    @apply py-2 pl-4 border-b border-slate-200 text-xs text-slate-700;
+}
+
+.card {
+    @apply bg-white p-6 rounded-lg shadow-lg border border-slate-200;
+  
+
+}
+
+.primary-btn {
+    @apply flex w-full justify-center rounded-md bg-blue-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-slate-400 disabled:cursor-wait;
+}
+}
+
+
